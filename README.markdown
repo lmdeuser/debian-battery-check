@@ -1,4 +1,4 @@
-Перед запуском скрипта обязательно проверьте имя и путь к вашей батарее в системе. /sys/class/power_supply/BAT* Обычно тут и исправьте под вашу систему в скрипте.
+Перед запуском скрипта обязательно проверьте имя и путь к вашей батарее в системе. /sys/class/power_supply/BAT* Обычно тут и исправьте под вашу систему в скрипте. У меня это /sys/class/power_supply/BAT0 . Поэтому это так и указано. Не вижу смысла усложнять скрипт автоопределением батареи с подстановкой пути в сервис. Исправить одну строчку перед запуском вполне нормально.
 
 Debian Battery Check Service
 This repository contains a shell script and systemd service to monitor battery levels on a Debian 13 system. If the battery level drops to 20% or below and no external power source is connected, the system will enter suspend mode.
